@@ -12,7 +12,7 @@
 	
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler/> 
-	<context:component-scan base-package="com.gdky.restfull,gov.gdgs.zs" />
+	<context:component-scan base-package="com.gdky.restfull,gov.gdgs.demo" />
 
 	<bean
 		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
