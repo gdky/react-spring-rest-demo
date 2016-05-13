@@ -1,0 +1,8 @@
+.page-heading {
+    /*background-color: #F1F1F1;*/
+    background-color: #f1f1f1;
+    padding:8px 16px 24px;
+}
+.page-heading h2{
+    font-weight:500
+}

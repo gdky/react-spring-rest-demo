@@ -1,0 +1,63 @@
+.base-table {
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #e9e9e9;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.base-table table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.base-table td {
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.base-table th,
+.base-table td {
+    padding: 8px 16px;
+    word-break: break-all;
+}
+
+.base-table table col[class*="col-"] {
+    position: static; /*Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)*/
+    float: none;
+    display: table-column;
+}
+
+.base-table tbody tr:last-child th,
+.base-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+.base-table tbody tr:first-child th,
+.base-table tbody tr:first-child td {
+    border-top: 0;
+}
+
+
+.base-table.table-bordered th,
+.base-table.table-bordered td {
+    border-right: 1px solid #e9e9e9;
+}
+
+.base-table.table-striped tbody > tr:nth-of-type(odd) {
+    background-color: #fafbfc;
+}
+
+.base-table .prop-name {
+    font-weight: 600;
+}
+
+.base-table.table-bordered table > thead > tr > th:last-child,
+.base-table.table-bordered table > tbody > tr > th:last-child,
+.base-table.table-bordered table > tfoot > tr > th:last-child,
+.base-table.table-bordered table > thead > tr > td:last-child,
+.base-table.table-bordered table > tbody > tr > td:last-child{
+    border-right:0;
+}

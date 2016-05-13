@@ -1,0 +1,17 @@
+#components-tabs-demo-card-top {
+  background: #CCE4F6;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-container > .ant-tabs-card .ant-tabs-content {
+  background: #fff;
+  padding: 16px;
+  height: 120px;
+  margin-top: -16px;
+}
+.card-container > .ant-tabs-card .ant-tabs-tabs-bar,
+.card-container > .ant-tabs-card .ant-tabs-tab-active {
+  border-color: #fff;
+}

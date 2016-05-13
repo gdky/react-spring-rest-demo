@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'anticon';
+    src: url('img/iconfont.eot');
+    /* IE9*/
+    src: url('img/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('img/iconfont.woff') format('woff'), /* chrome、firefox */ url('img/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('img/iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+/*总体布局*/
+body {
+    min-width: 1180px;
+    background-color: #F0F2F5;
+}
+
+#app {
+    height: 100%;
+}
+
+/*通用样式*/
+.wrap {
+    padding: 16px;
+}
+
+.right {
+    float: right;
+}
+
+.bg-height:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    width: inherit;
+    background-color: inherit;
+    border: inherit;
+    content: "";
+}
+
+.box-shadow {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*菜单样式*/
+.ant-menu-item > a {
+    color: #757575;
+    display: block;
+}
+
+.ant-menu-item-selected > a {
+    color: #2db7f5;
+}
+
+.ant-menu-item-active,
+.ant-menu-submenu-title:hover {
+    background-color: #eeeeee;
+}
+
+/*水平滚动表格*/
+.h-scroll-table .ant-table th,
+.h-scroll-table .ant-table td {
+    white-space: nowrap;
+}
+
+.h-scroll-table .ant-table-body {
+    overflow-x: auto;
+}
+.h-scroll-table .fix-table th,
+.h-scroll-table .fix-table td {
+    white-space: nowrap;
+}
+
+.h-scroll-table .fix-table {
+    overflow-x: auto;
+}
+
+/*表格外边框*/
+.table-border .ant-table-body {
+    border: 1px solid #e9e9e9;
+    border-radius: 6px;
+}
+
+/*固定样式表格*/
+.fix-table {
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+}
+
+.fix-table table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.fix-table td,
+.fix-table th {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.fix-table th,
+.fix-table td {
+    padding: 8px 16px;
+    word-break: break-all;
+}
+
+.fix-table table col[class*="col-"] {
+    position: static; /*Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)*/
+    float: none;
+    display: table-column;
+}
+
+.fix-table tbody tr:last-child th,
+.fix-table tbody tr:last-child td {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.fix-table tbody tr:first-child th,
+.fix-table tbody tr:first-child td {
+    border-top: 1px solid #e9e9e9;
+}
+
+.fix-table.table-bordered th,
+.fix-table.table-bordered td {
+    border-right: 1px solid #e9e9e9;
+}
+
+.fix-table.table-striped tbody > tr:nth-of-type(odd) {
+    background-color: #fafbfc;
+}
+
+.fix-table .prop-name {
+    font-weight: 600;
+}
+
+.fix-table.table-bordered table > thead > tr > th:last-child,
+.fix-table.table-bordered table > tbody > tr > th:last-child,
+.fix-table.table-bordered table > tfoot > tr > th:last-child,
+.fix-table.table-bordered table > thead > tr > td:last-child,
+.fix-table.table-bordered table > tbody > tr > td:last-child {
+    border-right: 0;
+}
+
+.base-layout-topaside {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.bg-base.lt {
+    background-color: #F0F3F4;
+}
+
+

@@ -1,0 +1,7 @@
+.cwbb-lrb .fix-table td {
+    text-align: center;
+}
+.cwbb-lrb .fix-table td:first-child {
+    text-align: left;
+}
+

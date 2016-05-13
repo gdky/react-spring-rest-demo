@@ -1,0 +1,19 @@
+.user-panel {
+    position: absolute;
+    right:32px;
+}
+.user-panel ul {
+    float: right;
+}
+.user-panel li{
+    float: left;
+    height: 64px;
+    font-size: 16px;
+    line-height: 64px;
+    padding:0 16px;
+
+}
+.user-panel .toggle-icon{
+    font-size: 12px;
+    -webkit-transform: scale(0.66666667) rotate(0deg);
+}
