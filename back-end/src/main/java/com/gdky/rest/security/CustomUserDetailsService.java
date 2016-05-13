@@ -1,4 +1,4 @@
-package com.gdky.restfull.security;
+package com.gdky.rest.security;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +15,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.gdky.restfull.entity.Role;
-import com.gdky.restfull.entity.User;
-import com.gdky.restfull.service.UserService;
+import com.gdky.rest.entity.Role;
+import com.gdky.rest.entity.User;
+import com.gdky.rest.service.UserService;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

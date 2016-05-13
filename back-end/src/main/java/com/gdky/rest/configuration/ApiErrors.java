@@ -1,4 +1,4 @@
-package com.gdky.restfull.configuration;
+package com.gdky.rest.configuration;
 
 public final class ApiErrors {
 	

@@ -1,4 +1,4 @@
-package gov.gdgs.zs.api;
+package gov.gdgs.demo.api;
 
 import java.util.HashMap;
 import java.util.Map;

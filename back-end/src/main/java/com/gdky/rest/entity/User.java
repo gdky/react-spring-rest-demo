@@ -1,4 +1,4 @@
-package com.gdky.restfull.entity;
+package com.gdky.rest.entity;
 
 import java.io.Serializable;
 import java.sql.Date;

@@ -1,4 +1,4 @@
-package com.gdky.restfull.api;
+package com.gdky.rest.api;
 
 import java.util.List;
 import java.util.Map;
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gdky.restfull.configuration.Constants;
-import com.gdky.restfull.entity.AsideMenu;
-import com.gdky.restfull.entity.ResponseMessage;
-import com.gdky.restfull.service.ICommonService;
+import com.gdky.rest.configuration.Constants;
+import com.gdky.rest.entity.AsideMenu;
+import com.gdky.rest.entity.ResponseMessage;
+import com.gdky.rest.service.ICommonService;
 
 @RestController
 @RequestMapping(value = Constants.URI_API_FRAMEWORK_PRIFIX)

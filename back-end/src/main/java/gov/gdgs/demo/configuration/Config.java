@@ -1,4 +1,4 @@
-package gov.gdgs.zs.configuration;
+package gov.gdgs.demo.configuration;
 
 public final class Config {
 

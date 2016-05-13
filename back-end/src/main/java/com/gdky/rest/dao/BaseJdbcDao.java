@@ -1,4 +1,4 @@
-package com.gdky.restfull.dao;
+package com.gdky.rest.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,4 +1,4 @@
-package com.gdky.restfull.service;
+package com.gdky.rest.service;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.gdky.restfull.dao.UserDao;
-import com.gdky.restfull.entity.Role;
-import com.gdky.restfull.entity.User;
+import com.gdky.rest.dao.UserDao;
+import com.gdky.rest.entity.Role;
+import com.gdky.rest.entity.User;
 
 @Service
 public class UserService {

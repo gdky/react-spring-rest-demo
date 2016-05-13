@@ -1,4 +1,4 @@
-package com.gdky.restfull.security;
+package com.gdky.rest.security;
 
 import javax.annotation.Resource;
 

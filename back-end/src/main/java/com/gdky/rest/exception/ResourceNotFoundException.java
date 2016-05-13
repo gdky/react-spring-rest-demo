@@ -1,4 +1,4 @@
-package com.gdky.restfull.exception;
+package com.gdky.rest.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 

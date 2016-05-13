@@ -1,23 +1,19 @@
-package gov.gdgs.zs.api;
+package gov.gdgs.demo.api;
 
-import java.util.HashMap;
+import gov.gdgs.demo.configuration.Config;
+import gov.gdgs.demo.service.CWBBService;
+
 import java.util.Map;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.web.bind.annotation.RestController;
-
-import gov.gdgs.zs.configuration.Config;
-import gov.gdgs.zs.dao.CWBBDao;
-import gov.gdgs.zs.service.CWBBService;
-
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = Config.URL_PROJECT)

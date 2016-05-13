@@ -1,4 +1,4 @@
-package com.gdky.restfull.configuration;
+package com.gdky.rest.configuration;
 
 import javax.annotation.Resource;
 
@@ -18,8 +18,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.gdky.restfull.security.CustomUserDetailsService;
-import com.gdky.restfull.security.EntryPointUnauthorizedHandler;
+import com.gdky.rest.security.CustomUserDetailsService;
+import com.gdky.rest.security.EntryPointUnauthorizedHandler;
 
 @Configuration
 @EnableWebSecurity

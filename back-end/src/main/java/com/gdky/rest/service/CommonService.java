@@ -1,4 +1,4 @@
-package com.gdky.restfull.service;
+package com.gdky.rest.service;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -9,8 +9,8 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.gdky.restfull.dao.IAsideMenuDao;
-import com.gdky.restfull.entity.AsideMenu;
+import com.gdky.rest.dao.IAsideMenuDao;
+import com.gdky.rest.entity.AsideMenu;
 
 @Service
 public class CommonService implements ICommonService {

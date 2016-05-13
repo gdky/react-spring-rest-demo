@@ -1,7 +1,7 @@
-package com.gdky.restfull.dao;
+package com.gdky.rest.dao;
 
 
-import gov.gdgs.zs.configuration.Config;
+import gov.gdgs.demo.configuration.Config;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,9 +15,9 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.gdky.restfull.entity.AsideMenu;
-import com.gdky.restfull.entity.Role;
-import com.gdky.restfull.entity.User;
+import com.gdky.rest.entity.AsideMenu;
+import com.gdky.rest.entity.Role;
+import com.gdky.rest.entity.User;
 
 @Repository
 @Transactional

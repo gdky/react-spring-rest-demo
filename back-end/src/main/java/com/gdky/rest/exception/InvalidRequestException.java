@@ -1,4 +1,4 @@
-package com.gdky.restfull.exception;
+package com.gdky.rest.exception;
 
 import org.springframework.validation.BindingResult;
 

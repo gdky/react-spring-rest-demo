@@ -1,15 +1,15 @@
-package gov.gdgs.zs.service;
+package gov.gdgs.demo.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import gov.gdgs.zs.configuration.Config;
-import gov.gdgs.zs.dao.CWBBDao;
+import gov.gdgs.demo.configuration.Config;
+import gov.gdgs.demo.dao.CWBBDao;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.gdky.restfull.exception.ResourceNotFoundException;
+import com.gdky.rest.exception.ResourceNotFoundException;
 
 import org.springframework.stereotype.Service;
 

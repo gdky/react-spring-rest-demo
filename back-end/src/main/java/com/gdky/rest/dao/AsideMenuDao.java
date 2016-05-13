@@ -1,7 +1,7 @@
-package com.gdky.restfull.dao;
+package com.gdky.rest.dao;
 
 
-import gov.gdgs.zs.configuration.Config;
+import gov.gdgs.demo.configuration.Config;
 
 import java.util.List;
 import java.util.Map;
@@ -10,8 +10,8 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.gdky.restfull.configuration.Constants;
-import com.gdky.restfull.entity.AsideMenu;
+import com.gdky.rest.configuration.Constants;
+import com.gdky.rest.entity.AsideMenu;
 
 @Repository
 @Transactional

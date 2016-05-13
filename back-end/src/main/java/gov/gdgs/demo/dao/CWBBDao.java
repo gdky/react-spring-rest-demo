@@ -1,8 +1,8 @@
-package gov.gdgs.zs.dao;
+package gov.gdgs.demo.dao;
 
-import gov.gdgs.zs.configuration.Config;
-import gov.gdgs.zs.untils.Pager;
-import gov.gdgs.zs.untils.Condition;
+import gov.gdgs.demo.configuration.Config;
+import gov.gdgs.demo.untils.Condition;
+import gov.gdgs.demo.untils.Pager;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,7 +15,7 @@ import org.hashids.Hashids;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.gdky.restfull.dao.BaseJdbcDao;
+import com.gdky.rest.dao.BaseJdbcDao;
 
 @Repository
 public class CWBBDao extends BaseJdbcDao {

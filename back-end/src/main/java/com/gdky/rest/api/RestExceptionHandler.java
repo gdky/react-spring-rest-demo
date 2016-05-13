@@ -1,8 +1,6 @@
-package com.gdky.restfull.api;
+package com.gdky.rest.api;
 
 import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.gdky.restfull.configuration.ApiErrors;
-import com.gdky.restfull.entity.ResponseMessage;
-import com.gdky.restfull.exception.InvalidRequestException;
-import com.gdky.restfull.exception.ResourceNotFoundException;
+import com.gdky.rest.configuration.ApiErrors;
+import com.gdky.rest.entity.ResponseMessage;
+import com.gdky.rest.exception.InvalidRequestException;
+import com.gdky.rest.exception.ResourceNotFoundException;
 
 /**
  * Called when an exception occurs during request processing. Transforms exception message into JSON format.
