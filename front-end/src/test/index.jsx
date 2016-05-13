@@ -9,6 +9,8 @@ import BaseTable from 'component/compBaseTable'
 import req from 'reqwest'
 import './style.css'
 
+const API_URL = '/api';
+
 /*
 定义组件A
  */
@@ -53,36 +55,22 @@ const CompB = React.createClass({
 组件compWrap
  */
 const CompWrap = React.createClass({
-    //==============初始化事件==================
+    //初始化事件
     getInitialState(){
         return {
             data: ''
         }
     },
 
-    //**********事件处理****************
+    //事件处理
     handleClick(){
 
     },
 
-    //==========生命周期事件=====================
+    //生命周期事件
 
-    componentDidMount(){
-        req({
-            url:'api/fw/asidemenu',
-            type:'json',
-            method:'get'
-        }).then(resp=>{
-            console.log(resp)
-            this.setState({
-                data:resp
-            })
-        }).fail(err=>{
-            console.log(err);
-        })
-    },
 
-    // =========样式渲染==================
+    // 样式渲染
     render(){
         return <div>
             <CompA onClick={this.handleClick} />
