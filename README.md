@@ -25,7 +25,13 @@ $ git clone https://github.com/gdky/react-spring-rest-demo
 $ cd font-end  
 $ npm install
 ```
-back-end为后端代码，可以导入为maven工程，自动安装依赖库  
+back-end为后端代码，以maven工程方式导入，自动安装依赖库  
+然后为工程添加tomcat的servlet依赖   
+执行一次maven update project  
+如使用eclipse，将项目属性的context root更改为“/”  
+```
+访问 http://localhost:8080/api 成功获取api信息
+```
 
 运行
 ```
