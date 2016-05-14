@@ -1,84 +1,69 @@
 /*
 引入依赖库
  */
-import 'common/lib.js'
 import React from 'react'
-import {Col,Row,Button,Affix,Checkbox} from 'antd'
-import ReactDom from 'react-dom'
-import BaseTable from 'component/compBaseTable'
+import ReactDom from 'react-dom' //ES6  ->  ES5
 import req from 'reqwest'
-import './style.css'
 
 const API_URL = '/api';
 
 /*
 定义组件A
  */
-const CompA = React.createClass({
-    onClick(){
-        this.props.onClick;// ==>compWrap.handleClick
+const Comment = React.createClass({
+    getDefaultProps() {
+        return ({
+            title: "title"
+        })
     },
-    render(){
-        return <div>
-            <h1> 组件1 标题</h1>
+    render() {
+        return <div className="comment">
+            <h1>{this.props.title}</h1>
             <p>内容内容内容内容内容</p>
-            <p> <Button type="primary" onClick={this.onClick}>主按钮</Button></p>
         </div>
     }
 })
 
-/*
- * 组件B
- */
+//组件PIC
+const Pic = React.createClass({
+    render() {
+        return <div className="pic">
+            <div>{this.props.src}</div>
+            {this.props.children}
+        </div >
 
-const CompB = React.createClass({
-    handleProp(data){
-        let map =''
-        if(data){
-             map = data.map(item=>{
-                return <p>{item.name}</p>
-            })
-        }
-        return map
-    },
-    render(){
-        const p = this.handleProp(this.props.content)
-        return <div>
-            <h2> 组件2标题</h2>
-            {p}
-        </div>
     }
 })
 
+//最外层组件
+const Wrap = React.createClass({
 
-/*
-组件compWrap
- */
-const CompWrap = React.createClass({
-    //初始化事件
-    getInitialState(){
-        return {
-            data: ''
-        }
+    getInitialState() {
+        return { data: 1, json: [{ id: 0, content: "content" }] }
+    },
+    handleClick() {
+        req({
+            url: 'api/todos',
+            method: 'get',
+            type: 'json'
+        }).then(resp => {
+            this.setState({ json: resp });
+        })
     },
 
-    //事件处理
-    handleClick(){
-
-    },
-
-    //生命周期事件
-
-
-    // 样式渲染
-    render(){
-        return <div>
-            <CompA onClick={this.handleClick} />
-            <CompB content={this.state.data}  />
-        </div>
+    render() {
+        let json = this.state.json[0]
+        return <div className="wrap">
+            <Pic src="localhost/img"> {json.content} </Pic>
+            <Comment />
+            <button onClick={this.handleClick}> 点击 </button>
+        </div >
     }
 })
 
-ReactDom.render(<detailBox data={"this.state.data"} />
-     , document.getElementById('react-content'));
+ReactDom.render(<Wrap  />
+    , document.getElementById('react-content'));
+
+
+
 
