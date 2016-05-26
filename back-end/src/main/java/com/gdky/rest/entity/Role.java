@@ -4,9 +4,6 @@ import java.io.Serializable;
 
 public class Role implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 6477197398963016786L;
     private Integer id;
     private String name;

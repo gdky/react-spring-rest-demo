@@ -16,8 +16,12 @@ public class UserService {
 	@Resource
 	private UserDao userDao;
 
-	public List<User> getUser(String userName){
-		return userDao.getUser(userName);
+	public User getUser(String userName){
+		List<User> ls =  userDao.getUser(userName);
+		if (ls.size()!=1){
+			return null;
+		}
+		return ls.get(0);
 	}
 
 	public List<Role> getRolesByUser(String userName) {

@@ -1,14 +1,12 @@
 package com.gdky.rest.entity;
 
 import java.io.Serializable;
-import java.sql.Date;
-
 public class User implements Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 3365405747302906236L;
+	private static final long serialVersionUID = 1849013869853717398L;
 	private Integer id;
 	private String username;
 	private String password;
@@ -75,5 +73,19 @@ public class User implements Serializable {
 		this.names = name;
 	}
 	
+	public User(User u){
+		this.id = u.id;
+		this.username = u.username;
+		this.names = u.names;
+		this.password = u.password;
+		this.passwordHint = u.passwordHint;
+		this.accountEnabled = u.accountEnabled;
+		this.accountExpired =  u.accountExpired;
+		this.accountLocked = u.accountLocked;
+		this.credentialsExpired = u.credentialsExpired;
+	}
+	public User(){
+		
+	}
 	
 }
