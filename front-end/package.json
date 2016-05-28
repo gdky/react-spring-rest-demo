@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "antd": "^0.12.11",
+    "antd": "^0.12.1",
     "numeral": "^1.5.3",
     "qwest": "^4.3.2",
     "react": "^0.14.7",
