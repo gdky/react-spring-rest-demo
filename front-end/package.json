@@ -38,4 +38,6 @@
     "build": "webpack --config webpack.dist.js --progress",
     "test": "webpack-dev-server --config webpack.test.js -d --port 8002 --progress --colors --hot --content-base src/test"
   }
-}
+
+blog
+
